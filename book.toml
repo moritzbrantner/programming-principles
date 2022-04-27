@@ -1,6 +1,18 @@
 [book]
-authors = ["dude"]
+authors = ["Moritz Brantner"]
 language = "en"
 multilingual = false
 src = "src"
 title = "Programming Principles"
+
+[output.html]
+default-theme = "dark"
+preferred-dark-theme = "navy"
+curly-quotes = true
+mathjax-support = false
+copy-fonts = true
+no-section-label = false
+git-repository-url = "https://github.com/moritzbrantner/programming-principles"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/moritzbrantner/programming-principles/edit/main/guide/{path}"
+# site-url = "/programming-principles/"
