@@ -1,1 +1,0 @@
-# Boy-Scout Rule
