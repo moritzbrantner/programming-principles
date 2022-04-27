@@ -33,7 +33,7 @@ jobs:
       - name: Setup mdBook
         uses: peaceiris/actions-mdbook@v1
         with:
-          mdbook-version: '0.4.15'
+          mdbook-version: 'latest'
 
       - name: Build Docs
         run: mdbook test && mdbook build 
@@ -43,3 +43,4 @@ jobs:
         with:
           branch: gh-pages # The branch the action should deploy to.
           folder: book # The folder the action should deploy.
+          ssh-key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
