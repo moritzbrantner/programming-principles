@@ -139,10 +139,18 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p>There are a few principles, rules or universal laws in software development that guide architects, programmers, and anyone needing to design software.
+This book lists some of those principles, although it’s far from complete.
+Still, the most important one should be listed here, and if you want to learn more, you can always read the <a href="https://en.wikipedia.org/wiki/Software_design_principles">Wikipedia article</a>.</p>
+<h2 id="why"><a class="header" href="#why">Why</a></h2>
+<p>I believe it is important to frequently come back to the basics.
+Reminding ourselves of the synthesized knowledge that the entire developer community has gained over the years hopefully will help us to understand the code better.
+Secondly, by designing this book I hope to get some practice in writing good code and applying and revising these principles.
+If at any point I find myself doing the opposite, I will be happy to reconcile the theory and the praxis.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="kiss"><a class="header" href="#kiss">KISS</a></h1>
 <p><strong>Keep It Simple, Stupid</strong>: most systems work best if they are kept simple
 rather than made complex.</p>
-<h2 id="why"><a class="header" href="#why">Why</a></h2>
+<h2 id="why-1"><a class="header" href="#why-1">Why</a></h2>
 <ul>
 <li>Less code is easier to read, easier to grasp, has less bugs, and is easier to modify.</li>
 <li>Simplicity is the ultimate sophistication.</li>
@@ -161,7 +169,7 @@ when there is nothing left to take away.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="yagni"><a class="header" href="#yagni">YAGNI</a></h1>
 <p><strong>You Aren’t Gonna Need It</strong>: don’t implement something until it is necessary.</p>
-<h2 id="why-1"><a class="header" href="#why-1">Why</a></h2>
+<h2 id="why-2"><a class="header" href="#why-2">Why</a></h2>
 <ul>
 <li>Any work that’s only used for a feature that’s needed tomorrow, means losing
 effort from features that need to be done for the current iteration.</li>
@@ -179,7 +187,7 @@ foresee that you need them.</li>
 <li><a href="https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it">You aren’t gonna need it</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="dont-overengineer"><a class="header" href="#dont-overengineer">Don’t Overengineer</a></h1>
-<h2 id="why-2"><a class="header" href="#why-2">Why</a></h2>
+<h2 id="why-3"><a class="header" href="#why-3">Why</a></h2>
 <ul>
 <li>Real progress against the real problem is maximized if we just work on what
 the problem really is.</li>
@@ -209,7 +217,7 @@ one’s attention upon some aspect”: it does not mean ignoring the other
 aspects, it is just doing justice to the fact that from this aspect’s point of
 view, the other is irrelevant.</p>
 </blockquote>
-<h2 id="why-3"><a class="header" href="#why-3">Why</a></h2>
+<h2 id="why-4"><a class="header" href="#why-4">Why</a></h2>
 <ul>
 <li>Simplify development and maintenance of software applications.</li>
 <li>When concerns are well-separated, individual sections can be reused, as well
@@ -225,6 +233,47 @@ possible.</li>
 <li><a href="https://en.wikipedia.org/wiki/Separation_of_concerns">Separation of Concerns</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="keep-things-dry"><a class="header" href="#keep-things-dry">Keep things DRY</a></h1>
+<p><strong>Don’t Repeat Yourself</strong>: Every piece of knowledge must have a single,
+unambiguous, authoritative representation within a system.</p>
+<p>Each significant piece of functionality in a program should be implemented in
+just one place in the source code. Where similar functions are carried out by
+distinct pieces of code, it is generally beneficial to combine them into one by
+abstracting out the varying parts.</p>
+<h2 id="why-5"><a class="header" href="#why-5">Why</a></h2>
+<ul>
+<li>Duplication (inadvertent or purposeful duplication) can lead to maintenance
+nightmares, poor factoring, and logical contradictions.</li>
+<li>A modification of any single element of a system does not require a change in
+other logically unrelated elements.</li>
+<li>Additionally, elements that are logically related all change predictably and
+uniformly, and are thus kept in sync.</li>
+</ul>
+<h2 id="how-3"><a class="header" href="#how-3">How</a></h2>
+<ul>
+<li>Put business rules, long expressions, if statements, math formulas, metadata,
+etc. in only one place.</li>
+<li>Identify the single, definitive source of every piece of knowledge used in
+your system, and then use that source to generate applicable instances of that
+knowledge (code, documentation, tests, etc).</li>
+<li>Apply the
+<a href="https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)">Rule of three</a>.</li>
+</ul>
+<h2 id="resources-3"><a class="header" href="#resources-3">Resources</a></h2>
+<ul>
+<li><a href="http://wiki.c2.com/?DontRepeatYourself">Dont Repeat Yourself</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Don&#x27;t_repeat_yourself">Don’t repeat yourself</a></li>
+<li><a href="https://thevaluable.dev/dry-principle-cost-benefit-example/">DRY Principle: Its Benefit and Cost with Examples</a></li>
+</ul>
+<h2 id="related"><a class="header" href="#related">Related</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Abstraction_principle_(computer_programming)">Abstraction principle</a></li>
+<li><a href="http://wiki.c2.com/?OnceAndOnlyOnce">Once And Only Once</a> is a subset of DRY
+(also referred to as the goal of refactoring).</li>
+<li><a href="https://en.wikipedia.org/wiki/Single_Source_of_Truth">Single Source of Truth</a></li>
+<li>A violation of DRY is <a href="http://thedailywtf.com/articles/The-WET-Cart">WET</a>
+(Write Everything Twice)</li>
+<li><a href="https://rachelcarmena.github.io/2018/02/27/duplication-you-are-welcome.html">Be careful with the code metric “duplicated lines”</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="code-for-the-maintainer"><a class="header" href="#code-for-the-maintainer">Code For The Maintainer</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="avoid-premature-optimization"><a class="header" href="#avoid-premature-optimization">Avoid Premature Optimization</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="boy-scout-rule"><a class="header" href="#boy-scout-rule">Boy-Scout Rule</a></h1>
