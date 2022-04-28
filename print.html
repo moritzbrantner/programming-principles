@@ -346,6 +346,32 @@ should take the opportunity to fix it right there and then.</li>
 <li><a href="https://martinfowler.com/bliki/OpportunisticRefactoring.html">Opportunistic Refactoring</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="minimise-coupling"><a class="header" href="#minimise-coupling">Minimise Coupling</a></h1>
+<p>Coupling between modules or components is their degree of mutual
+interdependence; lower coupling is better. In other words, coupling is the
+probability that code unit “B” will “break” after an unknown change to code unit
+“A”.</p>
+<h2 id="why-9"><a class="header" href="#why-9">Why</a></h2>
+<ul>
+<li>A change in one module usually forces a ripple effect of changes in other
+modules.</li>
+<li>Assembly of modules might require more effort and/or time due to the increased
+inter-module dependency.</li>
+<li>A particular module might be harder to reuse and/or test because dependent
+modules must be included.</li>
+<li>Developers might be afraid to change code because they aren’t sure what might
+be affected.</li>
+</ul>
+<h2 id="how-7"><a class="header" href="#how-7">How</a></h2>
+<ul>
+<li>Eliminate, minimise, and reduce complexity of necessary relationships.</li>
+<li>By hiding implementation details, coupling is reduced.</li>
+<li>Apply the <a href="minimise-coupling.html#law-of-demeter">Law of Demeter</a>.</li>
+</ul>
+<h2 id="resources-7"><a class="header" href="#resources-7">Resources</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Coupling_(computer_programming)">Coupling</a></li>
+<li><a href="http://wiki.c2.com/?CouplingAndCohesion">Coupling And Cohesion</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="law-of-demeter"><a class="header" href="#law-of-demeter">Law of Demeter</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="composition-over-inheritance"><a class="header" href="#composition-over-inheritance">Composition Over Inheritance</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="orthogonality"><a class="header" href="#orthogonality">Orthogonality</a></h1>
