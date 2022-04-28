@@ -474,7 +474,46 @@ contracts.</li>
 <li><a href="https://www.martinfowler.com/articles/injection.html">Inversion of Control Containers and the Dependency Injection pattern</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="maximise-cohesion"><a class="header" href="#maximise-cohesion">Maximise Cohesion</a></h1>
+<p>Cohesion of a single module or component is the degree to which its
+responsibilities form a meaningful unit. Higher cohesion is better.</p>
+<h2 id="why-14"><a class="header" href="#why-14">Why</a></h2>
+<ul>
+<li>Reduced module complexity</li>
+<li>Increased system maintainability, because logical changes in the domain affect
+fewer modules, and because changes in one module require fewer changes in
+other modules.</li>
+<li>Increased module reusability, because application developers will find the
+component they need more easily among the cohesive set of operations provided
+by the module.</li>
+</ul>
+<h2 id="how-12"><a class="header" href="#how-12">How</a></h2>
+<ul>
+<li>Group related functionalities sharing a single responsibility (e.g. in a
+module or class).</li>
+</ul>
+<h2 id="resources-12"><a class="header" href="#resources-12">Resources</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Cohesion_(computer_science)">Cohesion</a></li>
+<li><a href="http://wiki.c2.com/?CouplingAndCohesion">Coupling And Cohesion</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="liskov-substitution-principle"><a class="header" href="#liskov-substitution-principle">Liskov Substitution Principle</a></h1>
+<p>The LSP is all about expected behavior of objects:</p>
+<blockquote>
+<p>Objects in a program should be replaceable with instances of their subtypes
+without altering the correctness of that program.</p>
+</blockquote>
+<p><strong>LSP</strong> is the L in <a href="liskov-substitution-principle.html#solid">SOLID</a>.</p>
+<p>There are two conceptions of the LSP:</p>
+<ol>
+<li>interpreting “correctness” simply as syntactic correctness, and</li>
+<li>interpreting “correctness” as “semantic correctness”.</li>
+</ol>
+<p>The latter is what was originally meant, but the former is what is usually used.</p>
+<h2 id="resources-13"><a class="header" href="#resources-13">Resources</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Liskov_substitution_principle">Liskov substitution principle</a></li>
+<li><a href="http://www.blackwasp.co.uk/lsp.aspx">Liskov Substitution Principle</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="openclosed-principle"><a class="header" href="#openclosed-principle">Open/Closed Principle</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="single-responsibility-principle"><a class="header" href="#single-responsibility-principle">Single Responsibility Principle</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="hide-implementation-details"><a class="header" href="#hide-implementation-details">Hide Implementation Details</a></h1>
