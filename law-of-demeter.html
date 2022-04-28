@@ -141,6 +141,25 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="law-of-demeter"><a class="header" href="#law-of-demeter">Law of Demeter</a></h1>
+<p>Don’t talk to strangers.</p>
+<h2 id="why"><a class="header" href="#why">Why</a></h2>
+<ul>
+<li>It usually tightens coupling</li>
+<li>It might reveal too much implementation details</li>
+</ul>
+<h2 id="how"><a class="header" href="#how">How</a></h2>
+<p>A method of an object may only call methods of:</p>
+<ol>
+<li>The object itself.</li>
+<li>An argument of the method.</li>
+<li>Any object created within the method.</li>
+<li>Any direct properties/fields of the object.</li>
+</ol>
+<h2 id="resources"><a class="header" href="#resources">Resources</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Law_of_Demeter">Law of Demeter</a></li>
+<li><a href="https://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/">The Law of Demeter Is Not A Dot Counting Exercise</a></li>
+</ul>
 
                     </main>
 

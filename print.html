@@ -373,7 +373,49 @@ be affected.</li>
 <li><a href="http://wiki.c2.com/?CouplingAndCohesion">Coupling And Cohesion</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="law-of-demeter"><a class="header" href="#law-of-demeter">Law of Demeter</a></h1>
+<p>Don’t talk to strangers.</p>
+<h2 id="why-10"><a class="header" href="#why-10">Why</a></h2>
+<ul>
+<li>It usually tightens coupling</li>
+<li>It might reveal too much implementation details</li>
+</ul>
+<h2 id="how-8"><a class="header" href="#how-8">How</a></h2>
+<p>A method of an object may only call methods of:</p>
+<ol>
+<li>The object itself.</li>
+<li>An argument of the method.</li>
+<li>Any object created within the method.</li>
+<li>Any direct properties/fields of the object.</li>
+</ol>
+<h2 id="resources-8"><a class="header" href="#resources-8">Resources</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Law_of_Demeter">Law of Demeter</a></li>
+<li><a href="https://haacked.com/archive/2009/07/14/law-of-demeter-dot-counting.aspx/">The Law of Demeter Is Not A Dot Counting Exercise</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="composition-over-inheritance"><a class="header" href="#composition-over-inheritance">Composition Over Inheritance</a></h1>
+<p>It is better to compose what an object can do than extend what it is. Compose
+when there is a “has a” (or “uses a”) relationship, inherit when “is a”.</p>
+<h2 id="why-11"><a class="header" href="#why-11">Why</a></h2>
+<ul>
+<li>Less coupling between classes.</li>
+<li>Using inheritance, subclasses easily make assumptions, and break <a href="composition-over-inheritance.html#lsp">LSP</a>.</li>
+<li>Increase flexibility: accommodate future requirements changes, otherwise
+requiring restructuring of business-domain classes in the inheritance model.</li>
+<li>Avoid problems often associated with relatively minor changes to an
+inheritance-based model including several generations of classes.</li>
+</ul>
+<h2 id="how-9"><a class="header" href="#how-9">How</a></h2>
+<ul>
+<li>Identify system object behaviors in separate interfaces, instead of creating a
+hierarchical relationship to distribute behaviors among business-domain
+classes via inheritance.</li>
+<li>Test for <a href="composition-over-inheritance.html#lsp">LSP</a> to decide when to inherit.</li>
+</ul>
+<h2 id="resources-9"><a class="header" href="#resources-9">Resources</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Composition_over_inheritance">Composition over inheritance</a></li>
+<li><a href="https://docs.microsoft.com/en-us/archive/blogs/thalesc/favor-composition-over-inheritance">Favor Composition Over Inheritance</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="orthogonality"><a class="header" href="#orthogonality">Orthogonality</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="robustness-principle"><a class="header" href="#robustness-principle">Robustness Principle</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="inversion-of-control"><a class="header" href="#inversion-of-control">Inversion of Control</a></h1>
