@@ -417,6 +417,19 @@ classes via inheritance.</li>
 <li><a href="https://docs.microsoft.com/en-us/archive/blogs/thalesc/favor-composition-over-inheritance">Favor Composition Over Inheritance</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="orthogonality"><a class="header" href="#orthogonality">Orthogonality</a></h1>
+<blockquote>
+<p>The basic idea of orthogonality is that things that are not related
+conceptually should not be related in the system.</p>
+</blockquote>
+<p>Source: <a href="https://www.artima.com/intv/dry3.html">Be Orthogonal</a></p>
+<blockquote>
+<p>It is associated with simplicity; the more orthogonal the design, the fewer
+exceptions. This makes it easier to learn, read and write programs in a
+programming language. The meaning of an orthogonal feature is independent of
+context; the key parameters are symmetry and consistency.</p>
+</blockquote>
+<p>Source:
+<a href="https://en.wikipedia.org/wiki/Orthogonality_(programming)">Orthogonality</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="robustness-principle"><a class="header" href="#robustness-principle">Robustness Principle</a></h1>
 <blockquote>
 <p>Be conservative in what you do, be liberal in what you accept from others</p>
@@ -535,6 +548,24 @@ modified).</li>
 <li><a href="https://blog.cleancoder.com/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html">The Open Closed Principle</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="single-responsibility-principle"><a class="header" href="#single-responsibility-principle">Single Responsibility Principle</a></h1>
+<p>A class should never have more than one reason to change.</p>
+<p>Long version: Every class should have a single responsibility, and that
+responsibility should be entirely encapsulated by the class. Responsibility can
+be defined as a reason to change, so a class or module should have one, and only
+one, reason to change.</p>
+<p><strong>SRP</strong> is the S in <a href="single-responsibility-principle.html#solid">SOLID</a>.</p>
+<h2 id="why-16"><a class="header" href="#why-16">Why</a></h2>
+<ul>
+<li>Maintainability: changes should be necessary only in one module or class.</li>
+</ul>
+<h2 id="how-14"><a class="header" href="#how-14">How</a></h2>
+<ul>
+<li>Apply <a href="./curlys-law.html">Curly’s Law</a>.</li>
+</ul>
+<h2 id="resources-15"><a class="header" href="#resources-15">Resources</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Single_responsibility_principle">Single responsibility principle</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="hide-implementation-details"><a class="header" href="#hide-implementation-details">Hide Implementation Details</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="curlys-law"><a class="header" href="#curlys-law">Curly’s Law</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="encapsulate-what-changes"><a class="header" href="#encapsulate-what-changes">Encapsulate What Changes</a></h1>
