@@ -443,6 +443,36 @@ non-conformant input as long as the meaning is clear.</li>
 <li><a href="https://martinfowler.com/bliki/TolerantReader.html">Tolerant Reader</a></li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="inversion-of-control"><a class="header" href="#inversion-of-control">Inversion of Control</a></h1>
+<p>IoC inverts the flow of control.
+It’s also known as the Hollywood Principle,
+“Don’t call us, we’ll call you”. A design principle in which custom-written
+portions of a computer program receive the flow of control from a generic
+framework. It carries the strong connotation that the reusable code and the
+problem-specific code are developed independently even though they operate
+together in an application.</p>
+<h2 id="why-13"><a class="header" href="#why-13">Why</a></h2>
+<ul>
+<li>Increase modularity of the program and make it extensible.</li>
+<li>To decouple the execution of a task from implementation.</li>
+<li>To focus a module on the task it is designed for.</li>
+<li>To free modules from assumptions about other systems and instead rely on
+contracts.</li>
+<li>To prevent side effects when replacing a module.</li>
+</ul>
+<h2 id="how-11"><a class="header" href="#how-11">How</a></h2>
+<ul>
+<li>Using Factory pattern</li>
+<li>Using Service Locator pattern</li>
+<li>Using Dependency Injection</li>
+<li>Using contextualized lookup</li>
+<li>Using Template Method pattern</li>
+<li>Using Strategy pattern</li>
+</ul>
+<h2 id="resources-11"><a class="header" href="#resources-11">Resources</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Inversion_of_control">Inversion of Control in Wikipedia</a></li>
+<li><a href="https://www.martinfowler.com/articles/injection.html">Inversion of Control Containers and the Dependency Injection pattern</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="maximise-cohesion"><a class="header" href="#maximise-cohesion">Maximise Cohesion</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="liskov-substitution-principle"><a class="header" href="#liskov-substitution-principle">Liskov Substitution Principle</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="openclosed-principle"><a class="header" href="#openclosed-principle">Open/Closed Principle</a></h1>
