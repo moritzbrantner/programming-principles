@@ -418,6 +418,30 @@ classes via inheritance.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="orthogonality"><a class="header" href="#orthogonality">Orthogonality</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="robustness-principle"><a class="header" href="#robustness-principle">Robustness Principle</a></h1>
+<blockquote>
+<p>Be conservative in what you do, be liberal in what you accept from others</p>
+</blockquote>
+<p>Collaborating services depend on each others interfaces. Often the interfaces
+need to evolve causing the other end to receive unspecified data. A naive
+implementation refuses to collaborate if the received data does not strictly
+follow the specification. A more sophisticated implementation will still work
+ignoring the data it does not recognize.</p>
+<h2 id="why-12"><a class="header" href="#why-12">Why</a></h2>
+<ul>
+<li>Ensure that a provider can make changes to support new demands, while causing
+minimal breakage to their existing clients.</li>
+</ul>
+<h2 id="how-10"><a class="header" href="#how-10">How</a></h2>
+<ul>
+<li>Code that sends commands or data to other programs or machines should conform
+completely to the specifications, but code that receives input should accept
+non-conformant input as long as the meaning is clear.</li>
+</ul>
+<h2 id="resources-10"><a class="header" href="#resources-10">Resources</a></h2>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Robustness_principle">Robustness Principle in Wikipedia</a></li>
+<li><a href="https://martinfowler.com/bliki/TolerantReader.html">Tolerant Reader</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="inversion-of-control"><a class="header" href="#inversion-of-control">Inversion of Control</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="maximise-cohesion"><a class="header" href="#maximise-cohesion">Maximise Cohesion</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="liskov-substitution-principle"><a class="header" href="#liskov-substitution-principle">Liskov Substitution Principle</a></h1>
